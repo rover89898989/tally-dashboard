@@ -1,18 +1,18 @@
-//  tally.py
+#//  tally.py
 
-// TALLY 18.0.1  saved as tally.py
- // to run the TALLY 18.0.1 system, these are the concrete steps:
+#// TALLY 18.0.1  saved as tally.py
+# // to run the TALLY 18.0.1 system, these are the concrete steps:
 
-// Ensure Streamlit is installed:
+#// Ensure Streamlit is installed:
  
-// bashCopypip install streamlit
+#// bashCopypip install streamlit
 
-// Save all the segments (A through H) into a single Python file, for example tally.py. The segments are already organized in 
-// Run it using Streamlit:
-// bashCopystreamlit run tally.py 
-// saved as separate segments A,B,C,D,E,F,G, and H
+#// Save all the segments (A through H) into a single Python file, for example tally.py. The segments are already organized in 
+#// Run it using Streamlit:
+#// bashCopystreamlit run tally.py 
+#// saved as separate segments A,B,C,D,E,F,G, and H
 
-// seg A revised
+#// seg A revised
 # Add to imports section in segment A
 import streamlit as st
 
@@ -48,7 +48,7 @@ VERSION = "18.0.1"
                 'size': item_size
             }
             self.cache_size += item_size
-//seg B
+#//seg B
 # TALLY Dashboard Code - Segment B
 
     def render_dashboard(self):
@@ -90,7 +90,7 @@ VERSION = "18.0.1"
         except Exception as e:
             logger.error(f"Error rendering overview tab: {e}")
             st.error("Error loading overview data")
-//seg C
+#//seg C
 # TALLY Dashboard Code - Segment C
 
 class DocumentationGenerator:
@@ -135,7 +135,7 @@ class DocumentationGenerator:
         except Exception as e:
             logger.error(f"Error generating documentation: {e}")
             raise
-// seg D
+#// seg D
 # TALLY Dashboard Code - Segment D
 
 class DiagnosticsManager:
@@ -200,7 +200,7 @@ class TestingUtilities:
             logger.error(f"Error running system tests: {e}")
             results['errors'].append(str(e))
             return results
-// seg E
+#// seg E
 # TALLY Dashboard Code - Segment E
 
 class DeploymentManager:
@@ -247,7 +247,7 @@ class DeploymentManager:
             logger.error(f"Deployment error: {e}")
             self._handle_deployment_failure(str(e))
             return False
-//seg F
+#//seg F
 # TALLY Dashboard Code - Segment F
 
 class ConfigurationManager:
@@ -291,7 +291,7 @@ class CacheManager:
         self.max_cache_size = self.cache_config['max_size']
         self.eviction_policy = self.cache_config['eviction_policy']
         self.compression_enabled = self.cache_config['compression_enabled']
-// seg G revised
+#// seg G revised
 # TALLY Dashboard Code - Segment G
 
 class CacheManager:
@@ -355,7 +355,7 @@ class CacheManager:
         else:
             self._evict_random()
 
-//seg H
+#//seg H
 # TALLY Dashboard Code - Segment H
 
 class PerformanceOptimizer:
