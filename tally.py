@@ -412,5 +412,11 @@ class PerformanceOptimizer:
         self.monitoring_thread.join()
 
 # Main function execution
+# Main function execution
+def main():
+    st.title("TALLY 18.0.1")
+    dashboard = TallyDashboard()
+    dashboard.render_dashboard()
+
 if __name__ == "__main__":
     main()
